@@ -38,7 +38,7 @@ const Create = (props) => {
             onSubmit={SubmitHandler}
             className="flex justify-start flex-col mt-5 w-1/2 m-auto container"
         >
-            <h2 className="text-3xl mb-4  text-orange-400">Register Form</h2>
+            <h2 className="text-3xl mb-4 text-orange-400 font-semibold">Register Form</h2>
 
             <input
                 onChange={(e) => setusername(e.target.value)}

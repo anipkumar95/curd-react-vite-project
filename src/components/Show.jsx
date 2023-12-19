@@ -1,5 +1,5 @@
 import React from "react";
-import { toast } from "react-toastify";
+import { toast } from "react-toastify"
 
 
 const Show = (props) => {
@@ -11,6 +11,11 @@ const Show = (props) => {
         setusers(copyusers);
         localStorage.setItem("users", JSON.stringify(copyusers));
         toast.warn("user deleted successfully!")
+    };
+
+    const mycss = {
+        fontSize: "22px",
+        fontWeight: 500,
     };
 
     return(
@@ -25,7 +30,7 @@ const Show = (props) => {
                 key={index}
                 className="flex justify-between mb-4 text-1xl p-4 bg-indigo-100 rounded-xl"
               >
-                {user.username}
+                <span style={mycss}>{user.username}</span>
 
                 <p>
                   <span className="mr-6 cursor-progress">
